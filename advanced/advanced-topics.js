@@ -22,11 +22,17 @@ module.exports = {
 console.log("JavaScript Engine: V8 is used by Chrome and Node.js");
 
 // **4. Performance Optimization: Minification and Bundling**
-// Here, minification and bundling can be done with tools like Webpack or Terser.
-// For now, let's focus on optimizing code logic.
+// **4. Performance Optimization: Higher-Order Array Methods**
 
-const calculateSum = (a, b) => a + b;
-const calculateDifference = (a, b) => a - b;
+const numbers = [1, 2, 3, 4, 5];
+
+// Using map() to create a new array with values doubled
+const doubledNumbers = numbers.map(number => number * 2);
+console.log(doubledNumbers);  // Output: [2, 4, 6, 8, 10]
+
+// Using forEach() to iterate over an array without returning a new array
+numbers.forEach(number => console.log(number));
+// Output: 1 2 3 4 5 (prints each number)
 
 // **5. Garbage Collection**
 // JavaScript automatically handles memory management with garbage collection.
